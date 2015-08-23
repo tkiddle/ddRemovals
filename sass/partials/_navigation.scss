@@ -1,0 +1,56 @@
+.navigation {
+  height: 100%;
+  width: 30%;
+  left: -30%;
+  padding: 40px;
+  position: fixed;
+  background-color: $colour-brand-accent;
+  box-sizing: border-box;
+  line-height: 1;
+  transition: left 0.4s ease;
+  overflow-y: auto;
+
+  @media only screen and (max-width: $bp-1) {
+    width: 60%;
+    left: -60%;
+  }
+
+  @media only screen and (max-width: $bp-2) {
+    padding: 24px;
+  }
+}
+
+.navigation--open {
+  left: 0%;
+}
+
+.nagivation__close {
+  color: #fff;
+  float: right;
+}
+
+.navigation__list {
+  margin-top: 64px;
+}
+
+.navigation__list__item {
+  margin-bottom: 22px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6em;
+    display: block;
+
+    @media only screen and (max-width: $bp-2) {
+      font-size: 1.4em;
+    }
+  }
+}
+
+.navigation__list__item--contact {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding-top: 13px;
+  padding-bottom: 8px;
+}

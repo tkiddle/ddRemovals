@@ -1,0 +1,60 @@
+$susy: (
+  columns: 12,
+  gutters: 0.25,
+  math: fluid,
+  output: float,
+  gutter-position: before,
+  box-sizing: border-box,
+  use-custom: (
+    clearfix: true
+  )
+);
+
+.grid {
+  @include pie-clearfix;
+}
+
+.grid__item {
+
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 48px;
+    @include span(50% no-gutters);
+
+  @media only screen and (max-width: $bp-1) {
+  }
+
+  @media only screen and (max-width: $bp-2) {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    @include span(100% no-gutters);
+  }
+}
+
+.client-logos .grid .grid__item {
+
+  text-align: center;
+
+  @media only screen and (max-width: $bp-1) {
+    padding-left: 24px;
+    padding-right: 24px;
+    @include span(50% no-gutters);
+
+    img {
+      width: 100%;
+    }
+
+  }
+
+  @media only screen and (max-width: $bp-2) {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    @include span(100% no-gutters);
+
+    img {
+      width: 50%;
+    }
+  }
+}

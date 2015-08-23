@@ -1,0 +1,32 @@
+$font-size-body: 1em;
+$font-size-body-small-screen: 0.8em;
+
+$font-family-default: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+
+$colour-brand-primary: #db222a;
+$colour-brand-accent: #db222a;
+
+$colour-lightest: #f9f9f9;
+$colour-light: #f7f7f7;
+
+$content-box-primary: $colour-brand-primary;
+$content-box-secondary: $colour-lightest;
+$content-box-tertiary: $colour-light;
+
+$text-colour-light: #fff;
+$text-colour-dark: #494949;
+$text-colour-primary: $colour-brand-accent;
+$text-colour-accent: #0a64cd;
+
+$banner-statement-colour: $text-colour-light;
+
+// Break points
+
+//anything below
+$bp-1: 800px;
+$bp-2: 660px;
+
+//anything below
+$medium-screen-width: 920px;
+
+

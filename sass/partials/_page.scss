@@ -1,0 +1,203 @@
+.page-content {
+  width: 100%;
+  position: relative;
+  left: 0;
+  transition: all 0.4s ease;
+
+  &.page-content--nav-open {
+    left: 30%;
+    width: 70%;
+
+    @media only screen and (max-width: $bp-1) {
+      left: 60%;
+      width: 100%;
+    }
+  }
+}
+
+.top-bar {
+  box-sizing: content-box;
+}
+
+.top-bar .top-bar__menu-toggler {
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-bar .top-bar__contact {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4em;
+  position: relative;
+  right: 1px;
+  float: right;
+}
+
+.social-icons {
+  a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.intro {
+  position: relative;
+  background-image: url('/images/hero-bg-large.jpg');
+  background-size: cover;
+  background-position-y: bottom;
+
+  @media only screen and (max-width: $bp-2) {
+    background-image: url('/images/hero-bg-small.jpg');
+  }
+}
+
+.intro__inner {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+
+.intro__inner .intro__inner__heading {
+  margin-bottom: 16px;
+  font-size: 3em;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: rgba(black, 0.4) 0 0 5px;
+}
+
+.intro__inner .intro__inner__sub-heading {
+  margin-bottom: 26px;
+  text-shadow: rgba(black, 0.4) 0 0 5px;
+}
+
+.intro__inner .intro__inner__scroll {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  display: block;
+  color: #fff;
+  line-height: 4;
+  margin: 0 auto;
+
+  @media only screen and (max-width: $bp-2) {
+    line-height: 4.8;
+  }
+}
+
+.intro__inner .intro__inner__cta {
+  margin-bottom: 40px;
+  padding: 12px 40px 9px 40px;
+}
+.about p {
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contact-box {
+  display: flex;
+
+  @media only screen and (max-width: $bp-1) {
+    display: block;
+    background-color: #f9f9f9;
+  }
+}
+
+.contact-box__col {
+  width: 50%;
+  flex: 1;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: $content-box-tertiary;
+
+  @media only screen and (max-width: $bp-1) {
+    width: 100%;
+  }
+}
+
+.contact-box__image {
+  background-image: url('/images/contact-bg-large.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: top;
+
+  @media only screen and (max-width: $bp-1) {
+    background-size: 100% auto;
+    height: 260px;
+  }
+
+  @media only screen and (max-width: $bp-2) {
+    background-size: 100% auto;
+    height: 160px;
+  }
+}
+
+.contact-box__col .content-box__title {
+  margin-bottom: 60px;
+
+  @media only screen and (max-width: $bp-2) {
+    margin-bottom: 38px;
+  }
+}
+
+.contact-box__details__inner {
+  padding: 80px;
+
+  @media only screen and (max-width: $bp-1) {
+    text-align: center;
+  }
+
+  @media only screen and (max-width: $bp-2) {
+    padding: 70px 34px;
+  }
+}
+
+.content-box__phone,
+.content-box__mobile,
+.content-box__email {
+  font-size: 1.2em;
+  font-weight: normal;
+
+  @media only screen and (max-width: $bp-2) {
+    font-size: 1.6em;
+  }
+
+  a {
+    color: $text-colour-dark;
+  }
+}
+
+.content-box__phone,
+.content-box__mobile {
+  margin-top: 34px;
+  margin-bottom: 17px;
+}
+
+.content-box__mobile {
+  margin-top: 0;
+}
+
+.footer {
+
+  background-color: $content-box-primary;
+  padding: 36px 120px 28px 120px;
+  color: $text-colour-light;
+
+  @media only screen and (max-width: $bp-2) {
+    padding: 34px 34px 28px 34px;
+  }
+}

@@ -1,0 +1,44 @@
+.h-cf:before,
+.h-cf:after {
+  content: " ";
+  display: table;
+}
+
+.h-cf:after {
+  clear: both;
+}
+
+.h-fl {
+  float: left;
+}
+
+.h-fr {
+  float: right;
+}
+
+.h-fh {
+  height: 100%;
+}
+
+.h-hidden {
+	display:none;
+}
+
+.h-img-full {
+  width: 100%;
+}
+
+.h-show-small {
+	display: none;
+
+  @media only screen and (max-width: $bp-2) {
+		display: block;
+  }
+}
+
+.h-show-large {
+	@media only screen and (max-width: $bp-2) {
+		display: none;
+  }
+}
+
