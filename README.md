@@ -1,4 +1,2 @@
-lazyPlate
-=========
-
-Boiler Plate for new projects
+# ddRemovals
+Small single page site for DD Removals
